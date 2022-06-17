@@ -1,0 +1,27 @@
+
+TODO: Add the following 3 menu items 
+  
+  Employees
+  Products 
+  About 
+
+
+TODO: Integrate bootstrap properly 
+  [Recommended]  Tightly integrate with angular.json 
+
+---
+
+TODO: Have the menu items Login, signup in header
+     along with other menus except 'back to top'
+
+     Have the menu item back to top in footer
+     along with other menus except 'Login, signup'
+
+     Condition: menu comp should be used in both header and footer
+
+     [LEARN:] content projection in angular 
+              or transclusion in angular 
+
+
+
+
