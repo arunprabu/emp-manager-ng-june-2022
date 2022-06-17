@@ -1,0 +1,49 @@
+Components
+---
+Thinking in Angular
+---
+  1. Identify number of components 
+  2. Identify the hierarchy of components
+
+
+Building Blocks
+---
+  Components 
+  Directives 
+  Services
+  Interfaces / Classes / Models 
+  Pipes
+  Guards
+  Modules 
+  Interceptor
+
+----
+Concepts 
+--
+
+
+Project Structure
+-----
+  src/
+    app/
+      header/
+        ...
+        ...
+        ...
+        ...
+      footer/
+        ...
+        ...
+      menu/
+        ...
+        ...
+        ...
+    ...
+    ...
+    ...
+    ...
+
+
+
+
+TODO: Include bootstrap css and js properly in angular app 
