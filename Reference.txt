@@ -20,24 +20,44 @@ Building Blocks
 ----
 Concepts 
 --
+  Data Binding 
+  Routing (~1.5 Hours)
+  Cross Component Communication
+  RxJS / Observables 
+  Lifecycle Hooks 
+  
 
 
-Project Structure
+
+Project Structure - Feature wise project structure 
 -----
   src/
     app/
-      header/
-        ...
-        ...
-        ...
-        ...
-      footer/
-        ...
-        ...
-      menu/
-        ...
-        ...
-        ...
+      shared/
+        header/
+          ...
+          ...
+          ...
+          ...
+        footer/
+          ...
+          ...
+        menu/
+          ...
+          ...
+          ...
+      home/
+      concepts/
+      about/
+      employees/
+      products/
+      auth/
+        login/
+        signup/
+        forgot-pw/
+      dashboard/
+      reports/
+      tickets/
     ...
     ...
     ...
@@ -45,5 +65,109 @@ Project Structure
 
 
 
+Styles in Angular
+--
+  1. External Styles 
+      bootstrap.css, styles.css, app.comp.css 
+  2. Internal Styles 
+      will be inside @Component decorator (refer footer.comp.ts )
+  3. Inline Styles 
+      use style attribute in html element directly 
+---
 
-TODO: Include bootstrap css and js properly in angular app 
+ViewEncapsulation and styling 
+--
+In Angular, a component's styles can be encapsulated within the component's host element so that 
+they don't affect the rest of the application.
+Refer: https://angular.io/guide/view-encapsulation
+
+Routing in Angular (~1.5 Hours)
+---
+  * to make a single page app 
+
+  SPA Characteristics (70):
+  1. Pages should not refresh/reload [DONE]
+  2. URL should be changed [DONE]
+  3. History should be maintained [DONE]
+  4. Header, Footer should be intact  [DONE]
+  5. The section in between header and footer should be updated [DONE]
+  6. Active Menu should be set 
+  7. Page Title should be changed [TODO]
+
+Routing 
+---
+  Step 0:
+  --
+    Identifying the URLs for Menus 
+      Home                - http://localhost:4200/
+      Concepts            - http://localhost:4200/concepts
+      Employees           - http://localhost:4200/employees
+      About               - http://localhost:4200/about
+
+  Step 1:
+  ---
+    Let's create the components for the URL's 
+
+    ng g c home -is -it 
+    ng g c concepts -is 
+    ng g c employees -is 
+    ng g c about -is 
+    
+
+  Step 2:
+  ---
+     LEt's setup the URL's in menu.comp.html 
+
+  Step 3: 
+  --
+    Check the URL. URL will change. But not stable. Let's fix it. 
+    Now, it's time to config the routes in app-routing.module.ts 
+
+    // Config the routes 
+    const routes: Routes = [
+      { path: '', component: HomeComponent},
+      { path: 'concepts', component: ConceptsComponent },
+      { path: 'employees', component: EmployeesComponent},
+      { path: 'about', component: AboutComponent }
+    ];
+
+  Step 4:
+  ---
+    Check the app. URLs will be stable. But the component is loaded in between header and footer. 
+    Let's fix it. 
+
+    in app.comp.html, use router-outlet in between header and footer
+
+    <!-- Ideal place for your layout -->
+    <app-header></app-header>
+
+    <div class="container mt-5 pt-2">
+      <router-outlet></router-outlet>
+    </div>
+
+    <app-footer></app-footer>  
+
+  Step 5:
+  --
+    Check the app. Page will still refresh. Let's fix it.
+
+    in menu.comp.html -- replace all href with routerLink
+
+  Step 6:
+  --
+    Let's work on active menu [TOMORROW]
+
+
+
+Data Binding (~4 Hours)
+---
+  Binding the data from comp.ts into comp.html 
+
+  TS => HTML 
+
+  1. Interpolation
+  2. Property Binding 
+  3. Event Binding 
+  4. Two Way Binding 
+  5. Cutom Property Binding 
+  6. Custom Event Binding 

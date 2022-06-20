@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* app wide css file */
+/* applicable to all components - conditions apply */
+/* ideal place for you to override bootstrap styles */
+/* you can develop custom theme here */
+
+.copyrightText{
+  color: dimgray;
+}
+
+.txtBg{
+  background-color: yellow;
+}
+

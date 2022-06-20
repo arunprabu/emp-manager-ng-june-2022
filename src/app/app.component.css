@@ -1,0 +1,7 @@
+/* component-specific styles - can be used in app.comp.html */
+/* comp specific styles can override global styles */
+
+.redText{
+  color: red;
+  background-color: greenyellow;
+}
