@@ -21,7 +21,7 @@ Building Blocks
 Concepts 
 --
   Data Binding 
-  Routing (~1.5 Hours)
+  Routing (~1.5 Hours) [DONE]
   Cross Component Communication
   RxJS / Observables 
   Lifecycle Hooks 
@@ -91,7 +91,7 @@ Routing in Angular (~1.5 Hours)
   3. History should be maintained [DONE]
   4. Header, Footer should be intact  [DONE]
   5. The section in between header and footer should be updated [DONE]
-  6. Active Menu should be set 
+  6. Active Menu should be set [TODO]
   7. Page Title should be changed [TODO]
 
 Routing 
