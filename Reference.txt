@@ -48,6 +48,7 @@ Project Structure - Feature wise project structure
           ...
       home/
       concepts/
+        cpb/
       about/
       employees/
       products/
@@ -58,6 +59,7 @@ Project Structure - Feature wise project structure
       dashboard/
       reports/
       tickets/
+      
     ...
     ...
     ...
@@ -158,6 +160,32 @@ Routing
     Let's work on active menu [TOMORROW]
 
 
+Variables, methods, classes and Casing 
+---
+  1. camelCase  [ Recommended for Variables and methods ]
+  2. PascalCase [ Recommended for Class, Interfaces, Components, Directives, Services, Guards, Pipes, Modules ]
+  3. kebab-case [ Recommended sometimes for css classes ]
+  4. snake_case [ Not Recommended ] 
+
+valid variable names 
+-
+appName 
+
+valid boolean names 
+-
+isLoggedIn, hasAuth
+
+valid array names 
+-
+  colors, colorList 
+
+valid object names 
+-
+  profileData, profile, 
+
+
+
+
 
 Data Binding (~4 Hours)
 ---
@@ -166,8 +194,42 @@ Data Binding (~4 Hours)
   TS => HTML 
 
   1. Interpolation
+        TS => HTML 
+        {{}} 
+
   2. Property Binding 
+        TS => HTML 
+        []
+
   3. Event Binding 
+        TS <= HTML 
+        ()
+        Note: 'on' prefix should be removed from event 
+
+        TODO: in events 
+
   4. Two Way Binding 
-  5. Cutom Property Binding 
+        TS <=> HTML 
+        [(ngModel)]
+
+        Note: applicable in form elements only 
+
+  5. Custom Property Binding 
   6. Custom Event Binding 
+
+
+===
+Cross Component Communication
+--
+  1. Parent to Child Component Communication
+      Using Custom Property Binding 
+
+  2. Child to Parent Component Communication
+      2.1 Using Custom Event Binding 
+      2.2 Using @ViewChild()
+
+  3. Any to Any Component Communication
+      Using RxJS/Observable 
+      Prereq: Services, RxJS/Observables, Subscription, LifeCycle Hooks 
+
+

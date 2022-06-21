@@ -12,7 +12,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
       </app-menu>
       <!-- Inline styles  -->
       <p class="copyrightText" 
-        style="border: solid 1px green;">Copyright 2022 </p>
+        style="border: solid 1px green;">Copyright {{copyrightYear}} </p>
     </footer>
   `,
   // Internal styles */
@@ -28,6 +28,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   // ts 
+  copyrightYear = 2022;
+
   constructor() { }
 
   ngOnInit(): void {

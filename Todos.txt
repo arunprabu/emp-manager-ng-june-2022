@@ -29,7 +29,6 @@ TODO: learn about conditional content projection in angular/conditional transclu
       I want login and signup to be displayed at last in header menus 
       I want back to top to be displayed at first in footer menus 
 
-
 ---
 Routing 
 -

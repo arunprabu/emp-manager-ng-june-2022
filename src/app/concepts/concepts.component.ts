@@ -7,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class ConceptsComponent implements OnInit {
-
+  // ts 
+  // ideal place for you to have public/private variables
+  appName = 'Employee Manager App'; // interpolation 
+  companyName = 'Cognizant Technologies Pvt Ltd'; // prop binding 
+  courseName = "Angular 13"; // two way binding 
+  
+  // TODO: number, boolean, colors, profile is an obj with exp property, 
+  // getExp should return exp property from profile obj 
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  handleClickMe(){ // event binding 
+    alert('clicked');
   }
 
 }
