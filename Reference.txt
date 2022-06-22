@@ -8,9 +8,10 @@ Thinking in Angular
 
 Building Blocks
 ---
-  Components 
+  Components  
+    HTML, CSS, TS (Data Binding)
   Directives 
-  Services
+  Services 
   Interfaces / Classes / Models 
   Pipes
   Guards
@@ -20,9 +21,9 @@ Building Blocks
 ----
 Concepts 
 --
-  Data Binding 
+  Data Binding [DONE]
   Routing (~1.5 Hours) [DONE]
-  Cross Component Communication
+  Cross Component Communication [Partially Covered]
   RxJS / Observables 
   Lifecycle Hooks 
   
@@ -49,6 +50,7 @@ Project Structure - Feature wise project structure
       home/
       concepts/
         cpb/
+        ceb/
       about/
       employees/
       products/
@@ -226,7 +228,7 @@ Cross Component Communication
 
   2. Child to Parent Component Communication
       2.1 Using Custom Event Binding 
-      2.2 Using @ViewChild()
+      2.2 Using @ViewChild() [TODO] 
 
   3. Any to Any Component Communication
       Using RxJS/Observable 
