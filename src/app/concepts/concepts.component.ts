@@ -23,9 +23,19 @@ export class ConceptsComponent implements OnInit, AfterViewInit {
     name: 'John',
     citiesVisited: ['Paris', 'Atlanta', 'Toronto', 'Stockholm']
   }
-
+  // colors: any[] = ['red', 'green', 'blue', 345345];
+  colors: Array<string> =  ['red', 'green', 'blue'];
   dataReceivedFromParent: any = {};
   dataAccessFromChild = '';
+
+  // structural directives releated
+  isAuth = false;
+  skills = ['ts', 'angular', 'react', 'nodejs'];
+  myContext = {
+    $implicit: 'World', 
+    age: 20,
+    name: 'John'
+  };
 
   @ViewChild(CebComponent, { static: false}) cebData!: CebComponent;
 

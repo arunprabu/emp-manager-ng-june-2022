@@ -40,3 +40,9 @@ TODO: Handling 404 - Page Not Found
 TODO: disable the button, change the label to 'clicked'
 
 
+TODO: find index in *ngFor 
+
+TODO: have variable day = 0 
+      Have switch case in angular 
+        if 1 display <p>Sunday</p>
+        if 2 display <p>Monday</p>

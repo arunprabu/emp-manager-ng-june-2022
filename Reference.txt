@@ -25,7 +25,7 @@ Concepts
   Routing (~1.5 Hours) [DONE]
   Cross Component Communication [Partially Covered]
   RxJS / Observables 
-  Lifecycle Hooks 
+  Lifecycle Hooks [Partially Covered]
   
 
 
@@ -233,5 +233,7 @@ Cross Component Communication
   3. Any to Any Component Communication
       Using RxJS/Observable 
       Prereq: Services, RxJS/Observables, Subscription, LifeCycle Hooks 
+
+
 
 
