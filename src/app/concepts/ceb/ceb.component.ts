@@ -14,8 +14,6 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class CebComponent implements OnInit {
 
   featureName = 'Child to Parent Comp Commn using @ViewChild()';
-
-
   // Step 0: Let's have the data in child comp -- we will send this data to parent comp later 
   accountInfo = {
     name: 'Steve',

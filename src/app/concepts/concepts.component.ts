@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
+import { CebComponent } from './ceb/ceb.component';
 
 @Component({
   selector: 'app-concepts',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ConceptsComponent implements OnInit {
+export class ConceptsComponent implements OnInit, AfterViewInit {
   // ts 
   // ideal place for you to have public/private variables
   appName = 'Employee Manager App'; // interpolation 
@@ -24,10 +25,23 @@ export class ConceptsComponent implements OnInit {
   }
 
   dataReceivedFromParent: any = {};
+  dataAccessFromChild = '';
 
-  constructor() { }
+  @ViewChild(CebComponent, { static: false}) cebData!: CebComponent;
+
+  constructor(private cd: ChangeDetectorRef ) { 
+
+  }
 
   ngOnInit(): void {
+    // when @ViewChild with static true we can read cebData here
+  }
+
+  ngAfterViewInit(): void {
+    // when @ViewChild with static false we can read cebData here
+    // parent comp has to Wait till child component's data are set up 
+    this.dataAccessFromChild = this.cebData.accountInfo.name;
+    this.cd.detectChanges();
   }
 
   handleClickMe(){ // event binding 
