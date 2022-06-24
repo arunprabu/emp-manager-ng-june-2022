@@ -32,9 +32,9 @@ TODO: learn about conditional content projection in angular/conditional transclu
 ---
 Routing 
 -
-TODO: Work on setting active menu 
+TODO: Work on setting active menu [REVIEW ON MONDAY]
 TODO: Page Title should be changed (later)
-TODO: Handling 404 - Page Not Found 
+TODO: Handling 404 - Page Not Found [REVIEW ON MONDAY]
 
 ---
 TODO: disable the button, change the label to 'clicked'

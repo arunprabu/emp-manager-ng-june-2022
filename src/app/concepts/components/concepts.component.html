@@ -112,6 +112,8 @@
       <!-- TODO: try finding index and display the the number from 1 till last before the skill inside li -->
 
 
+      <h3>ng-container, ngTemplateOutlet and ng-template</h3>
+
       <!-- Refer: concepts.comp.ts also for a variable myContext -->
       <ng-container *ngTemplateOutlet="eng1; context: myContext"></ng-container>
       <hr>
@@ -125,6 +127,13 @@
       <ng-template #eng2 let-myAge="age"><span>You are {{myAge}}!</span></ng-template>
       <ng-template #italian let-personName="name"><span>Hola {{personName}}!</span></ng-template>
 
+
+      <h3>Custom Attribute Directive</h3>
+      <p>ng g d concepts/directives/colorizer</p>
+
+      <div appColorizer>
+        <p>Test</p>
+      </div>
     </div>
 
   </div>

@@ -30,7 +30,7 @@ Concepts
 
 
 
-Project Structure - Feature wise project structure 
+Project Structure - Feature-wise and building block-wise project structure 
 -----
   src/
     app/
@@ -49,8 +49,15 @@ Project Structure - Feature wise project structure
           ...
       home/
       concepts/
-        cpb/
-        ceb/
+        components/
+          cpb/
+          ceb/
+          ...
+          ...
+          ...
+        directives/
+          ...
+          ...
       about/
       employees/
       products/
@@ -61,7 +68,6 @@ Project Structure - Feature wise project structure
       dashboard/
       reports/
       tickets/
-      
     ...
     ...
     ...
@@ -237,3 +243,22 @@ Cross Component Communication
 
 
 
+
+Directives
+---
+  * special instructions to the DOM 
+
+  1. Attribute Directives (will continue to learn many more)
+      * manipulates the behavior of the el 
+      routerLink
+
+  2. Structural Directives 
+      * manipulates the structural layer. 
+
+        *ngIf
+        *ngFor 
+        ngSwitch [TODO]
+
+  3. Custom Attribute Directives 
+
+  4. Custom Structural Directives [TODO]
