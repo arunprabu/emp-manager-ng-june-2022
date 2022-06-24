@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   template: `
     <div class="card">
       <div class="card-body">
-        <p>Visited Cities: {{cities}}</p>
+        <p *ngIf="cities">Visited Cities: {{cities}}</p>
       </div>
     </div>
   `,

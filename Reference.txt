@@ -8,11 +8,11 @@ Thinking in Angular
 
 Building Blocks
 ---
-  Components  
-    HTML, CSS, TS (Data Binding)
-  Directives 
-  Services 
-  Interfaces / Classes / Models 
+  Components 
+    HTML, CSS, TS
+  Directives [DONE]
+  Services  [Wednesday]
+  Interfaces / Classes / Models  [Wednesday]
   Pipes
   Guards
   Modules 
@@ -24,9 +24,9 @@ Concepts
   Data Binding [DONE]
   Routing (~1.5 Hours) [DONE]
   Cross Component Communication [Partially Covered]
-  RxJS / Observables 
-  Lifecycle Hooks [Partially Covered]
-  
+  RxJS / Observables  [Wednesday]
+  Lifecycle Hooks [Partially Covered]  [Wednesday]
+  Unit Testing [Wednesday]
 
 
 
@@ -263,3 +263,73 @@ Directives
 
   4. Custom Structural Directives [TODO]
       
+
+===
+Setting up ESLint in Angular
+---
+  in command prompt exec the following command 
+
+  ng add @angular-eslint/schematics
+
+  Would you like to proceed? Yes 
+  
+  Then, wait for the following messages to appear in cmd prompt 
+  
+  CREATE .eslintrc.json (984 bytes)
+  UPDATE package.json (1488 bytes)
+  UPDATE angular.json (3574 bytes)
+  ✔ Packages installed successfully.
+
+  You are all set. 
+  
+---
+
+
+
+--
+Analysis => Design => [ Development => Testing ] => Deployment => Maintenance 
+--
+
+dev => qa => (bugs) => dev => qa => (bugs) => dev => qa => (bugs) => dev => qa => (QA PASSED) => Deployment 
+
+dev writes test cases => dev writes functionality => (TOOLS) => instant feedback of success/failure 
+
+
+calc 
+--
+  Developers: 
+  ---
+    Source: FRD, HLD, Mockups 
+    Prepare: Test Cases (Real Requirements)
+    ---
+      1. inputs should be numbers 
+      2. output should always be number
+      3. if wrong input entered add button should be disabled 
+
+    Project Features: ADD 
+    --  
+      function add(a: number, b: number): number {
+        return a + b;
+      }
+
+      add(10, 20); // 30 
+
+    Testing: Tools 
+    ----
+
+
+
+Automated Testing 
+---
+  * writing code to test our code using tools is automated testing 
+
+  0. Static Type Checking 
+      Tools: TypeScript 
+
+  1. Unit Testing [LEARN]
+      * Testing small unit of the feature 
+      Tools: [Jasmine JS, Karma ]
+
+  2. Integration Testing 
+  3. End to End Testing (E2E Testing)
+

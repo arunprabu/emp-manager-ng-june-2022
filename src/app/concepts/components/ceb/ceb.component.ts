@@ -4,7 +4,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   selector: 'app-ceb',
   template: `
     <div>
-      <p>Account Name: {{accountInfo.name}}</p>
+      <p>Account Name: {{accountInfo?.name}}</p>
       <button (click)="handleSendDataToParent()">Send Data to Parent</button>
     </div>
   `,
@@ -19,7 +19,7 @@ export class CebComponent implements OnInit {
     name: 'Steve',
     age: 25,
     skills: ['HTML', 'CSS', 'TS']
-  }
+  };
 
   // Step 1: Let's create custom event 
   // Step 1.1 Create an object for EventEmitter class 

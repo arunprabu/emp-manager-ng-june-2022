@@ -101,9 +101,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "emp-manager-june-2022"
+  "defaultProject": "emp-manager-june-2022",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
