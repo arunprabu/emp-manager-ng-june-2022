@@ -46,3 +46,9 @@ TODO: have variable day = 0
       Have switch case in angular 
         if 1 display <p>Sunday</p>
         if 2 display <p>Monday</p>
+
+
+Custom Atrribute Directives
+----
+TODO: work on mouseover change bg color to light green 
+TODO: work on mouseout change bg color back to red
