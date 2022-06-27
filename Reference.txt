@@ -292,8 +292,10 @@ Analysis => Design => [ Development => Testing ] => Deployment => Maintenance
 
 dev => qa => (bugs) => dev => qa => (bugs) => dev => qa => (bugs) => dev => qa => (QA PASSED) => Deployment 
 
-dev writes test cases => dev writes functionality => (TOOLS) => instant feedback of success/failure 
 
+Modern Approach of Software Development 
+----------
+dev writes test cases => dev writes functionality => (TOOLS) => instant feedback of success/failure 
 
 calc 
 --
@@ -318,18 +320,78 @@ calc
     ----
 
 
+Modern Software Dev Methodology of 2022 / Testing Approach 
+---
+  1. Test Driven Development (TDD)
+      * is a progamming practice that instructs the developers to 
+        write NEW code only if an automated test has failed 
+
+      devs write test cases => (Instant feedback of failure/bug) => devs write the functionality =>  (Instant feedback of success ) => [CODE COMPLETE ]
+
+      Testing Pattern: AAA (Act, Arrange, Assert )
+      Tools: JEST, Mocha, Chai 
+
+  2. Behavior Driven Development (BDD) - [ Followed Be JasmineJS ]
+     * is an agile s/w dev Methodology
+     * an app documented and designed around the behavior, the uses expects to experience 
+        when interacting with it. 
+
+      devs write test cases => (Instant feedback of failure/bug) => devs write the functionality =>  (Instant feedback of success ) => [CODE COMPLETE ]
+      Testing Pattern: Given, When, Then
+      Tools: Jasmine JS 
+
 
 Automated Testing 
 ---
   * writing code to test our code using tools is automated testing 
 
   0. Static Type Checking 
-      Tools: TypeScript 
+      Tools: TypeScript
 
   1. Unit Testing [LEARN]
-      * Testing small unit of the feature 
+      * Testing small unit of components, services, directives, pipes, etc 
+      * Testing the comp in isolation (without connecting with the rest api )
+      * Testing Individual units of the component 
+      * Bug Reduction Density: 40-80% 
+
       Tools: [Jasmine JS, Karma ]
+      Jasmine JS - Unit Testing Framework
+      Karma - Test Runner 
 
   2. Integration Testing 
-  3. End to End Testing (E2E Testing)
+      * Different units, modules, or components tested as combined entity 
+      * Behavior of the app would be tested 
+      * Used for exposing issues in the integration of multiple units 
 
+      Example: test if a child comp can update parent comp 
+
+      Tools: [Jasmine JS, Karma]
+
+  3. End to End Testing (E2E Testing)
+      * Testing the whole app 
+      * Usually a multi step test combining multiple units and integration tests into 
+        one big test 
+      * Tests are done in a simulated browser, there may or many not an UI while test the 
+        is running 
+      
+      Example: Testing the complete auth flow 
+
+      Tools: [Protractor or CypressJS or Selenium]
+
+
+------
+
+
+* How to write test cases? 
+* Where to write test cases?
+* How to test our app against the test cases we wrote? 
+
+--
+Testing 
+  Angular Component (Today)
+
+  Angular Directives (Later this week)
+  Angular Services (Tomorrow)
+  Angular Pipes (Later this week )
+
+---

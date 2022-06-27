@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // ts
   title = 'emp-manager-june-2022';
+
+  appName = 'Emp Manager';
 }

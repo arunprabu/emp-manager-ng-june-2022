@@ -22,7 +22,7 @@ export class ConceptsComponent implements OnInit, AfterViewInit {
   userData = {
     name: 'John',
     citiesVisited: ['Paris', 'Atlanta', 'Toronto', 'Stockholm']
-  }
+  };
   // colors: any[] = ['red', 'green', 'blue', 345345];
   colors: Array<string> =  ['red', 'green', 'blue'];
   dataReceivedFromParent: any = {};
@@ -50,7 +50,7 @@ export class ConceptsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     // when @ViewChild with static false we can read cebData here
     // parent comp has to Wait till child component's data are set up 
-    this.dataAccessFromChild = this.cebData.accountInfo.name;
+    this.dataAccessFromChild = this.cebData.accountInfo?.name;
     this.cd.detectChanges();
   }
 

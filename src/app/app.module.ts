@@ -10,10 +10,12 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ConceptsComponent } from './concepts/components/concepts.component';
 import { EmployeesComponent } from './employees/employees.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './about/components/about.component';
 import { CpbComponent } from './concepts/components/cpb/cpb.component';
 import { CebComponent } from './concepts/components/ceb/ceb.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
+import { CalcComponent } from './about/components/calc/calc.component';
+import { CounterComponent } from './about/components/counter/counter.component';
 
 // Main Switching Box
 @NgModule({ // Decorator
@@ -28,7 +30,9 @@ import { ColorizerDirective } from './concepts/directives/colorizer.directive';
     AboutComponent,
     CpbComponent,
     CebComponent,
-    ColorizerDirective    
+    ColorizerDirective,
+    CalcComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
