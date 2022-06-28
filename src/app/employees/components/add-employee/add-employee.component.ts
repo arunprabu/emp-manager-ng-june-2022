@@ -20,9 +20,16 @@ export class AddEmployeeComponent implements OnInit {
       // Step 2: Have the TS equivalents of the input tags (FormControl)
       // for Step 3 and 4: Refer HTML
       name: new FormControl('', Validators.required), // Step 5: Let's work on validation
-      phone: new FormControl('', Validators.required),
-      email: new FormControl('', Validators.required)
+      phone: new FormControl('', Validators.required),// For step 6 : Refer HTML -- to display validation message
+      email: new FormControl('', [Validators.required, Validators.email]) // we can add multiple validators too
     });
+  }
+
+  handleAddEmployee(): void {
+    console.log(this.addEmployeeForm);
+
+    // form data
+    console.log(this.addEmployeeForm.value);
   }
 
 }

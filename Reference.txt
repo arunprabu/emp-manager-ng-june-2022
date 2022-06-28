@@ -416,3 +416,19 @@ Forms in Angular
       ---
         * suitable for complex form validations 
         * suitable for unit testing
+
+Service in Angular 
+---
+  * Intermediate layer helping the comp connect with REST API 
+  * job of a service  
+      * getting the req from the comp 
+      * send the req to the rest api 
+      * fetching res from the rest api 
+      * sending the res to the comp 
+
+  * building block in angular 
+  ---
+
+
+
+
