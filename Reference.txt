@@ -395,3 +395,24 @@ Testing
   Angular Pipes (Later this week )
 
 ---
+
+Forms in Angular
+---
+  1. Template Driven Forms 
+      * made with html 
+      * easiest type of form 
+      * validations are performed with directives 
+      disadv 
+      ---
+        * not suitable for complex form validations 
+        * not suitable for unit testing
+
+  2. Reactive Forms [RECOMMENDED]
+      * made with html + ts 
+      * easy 
+      * validations are performed with built-in and custom Validators
+
+      adv 
+      ---
+        * suitable for complex form validations 
+        * suitable for unit testing
