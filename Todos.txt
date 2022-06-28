@@ -48,8 +48,19 @@ TODO: have variable day = 0
         if 2 display <p>Monday</p>
 
 
-Custom Atrribute Directives
+Custom Attribute Directives
 ----
 TODO: work on mouseover change bg color to light green 
 TODO: work on mouseout change bg color back to red
 
+
+Unit Testing Todos
+---
+  in counter.comp.spec.ts 
+  // TODO: Decrement value in html template thru click on decrement btn
+
+  // TODO: should stop at 0 and show Minimum Reached upon decrement 
+  // TODO: should stop at 10 and show Maximum Reached upon increment 
+  // TODO: testing whether para element (with msg class ) has css class 'redText' 
+
+----

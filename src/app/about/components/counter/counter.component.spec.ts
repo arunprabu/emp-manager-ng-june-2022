@@ -54,4 +54,20 @@ describe('CounterComponent', () => {
 
   // TODO: should stop at 0 and show Minimum Reached upon decrement 
   // TODO: should stop at 10 and show Maximum Reached upon increment 
+
+  // find an element and check whether it has css style (inline style)
+  it('should have red bg in h2 element', () => {
+    const counterCompHTML = fixture.nativeElement as HTMLElement;
+    const bgColor =  counterCompHTML.querySelector('h2')?.style.backgroundColor;
+    // expect(bgColor).toBe('red'); // Not recommended if you use #ff0000 or rgb(255, 0, 0)
+    expect(bgColor).toBe('rgb(255, 0, 0)');
+  });
+
+  // TODO: testing whether para element (with msg class ) has css class 'redText' 
+
+
+
+
+
+
 });

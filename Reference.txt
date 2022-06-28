@@ -60,6 +60,8 @@ Project Structure - Feature-wise and building block-wise project structure
           ...
       about/
       employees/
+        components/
+        services/
       products/
       auth/
         login/
@@ -239,8 +241,6 @@ Cross Component Communication
   3. Any to Any Component Communication
       Using RxJS/Observable 
       Prereq: Services, RxJS/Observables, Subscription, LifeCycle Hooks 
-
-
 
 
 
