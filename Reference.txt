@@ -456,11 +456,10 @@ Pipes [DONE]
 Testing Pipes  [DONE]
 Modules [DONE]
 
-Any to Any Comp Commn 
-
 
 Friday
 ---
+  Any to Any Comp Commn 
   Authentication (3 hours) 
     Guards
     Interceptor 
