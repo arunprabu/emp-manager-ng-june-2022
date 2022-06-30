@@ -451,11 +451,11 @@ Thursday
 ---
 RxJS/Observables [DONE]
 Testing Directives (10 mins) [TODO]
-Testing async logic in component with tick and fakeasync (30 mins)
-Pipes 
+Testing async logic in component with tick and fakeasync (30 mins) [DONE]
+Pipes [DONE]
+Testing Pipes  [DONE]
+Modules [DONE]
 
-Testing Pipes 
-Modules 
 Any to Any Comp Commn 
 
 
@@ -483,3 +483,17 @@ Monday
   Demo (3 hours)
 
 ====
+
+
+Feature Modules and Feature Routing Modules
+--
+  Step 1: 
+    --
+    create feature module 
+      ng g m employees/employees --flat -m=app 
+
+  Step 2: 
+    create feature routing module 
+      ng g m employees/employees-routing --flat -m=employees 
+
+---

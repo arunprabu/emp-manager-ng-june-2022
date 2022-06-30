@@ -12,6 +12,8 @@
         aria-controls="ceb-databinding" aria-selected="true">Custom Event Binding</a>
       <a class="nav-item nav-link" data-bs-toggle="tab" data-bs-target="#directives-tab" role="tab"
         aria-controls="directives-tab" aria-selected="false">Directives</a>
+      <a class="nav-item nav-link" data-bs-toggle="tab" data-bs-target="#pipes-tab" role="tab" aria-controls="pipes-tab"
+        aria-selected="false">Pipes</a>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
@@ -32,7 +34,7 @@
       <h3>Property Binding</h3>
       <div [title]="companyName">Mouseover to see the company name</div>
       <input type="text" [value]="companyName">
-      
+
 
       <hr>
       <h3>Event Binding</h3>
@@ -50,11 +52,10 @@
 
     </div>
 
-    <div class="tab-pane fade" id="cpb-databinding" role="tabpanel"
-      aria-labelledby="cpb-databinding-tab">
+    <div class="tab-pane fade" id="cpb-databinding" role="tabpanel" aria-labelledby="cpb-databinding-tab">
       <h2>Parent to Child Comp Communication using Custom Property Binding </h2>
       <p>Name of the user: {{userData.name}}</p>
-       <!-- Step2: Implement Custom Property Binding. Now city has become like a tunnel. 
+      <!-- Step2: Implement Custom Property Binding. Now city has become like a tunnel. 
         Pass the data thru it. -->
       <app-cpb [cities]="userData.citiesVisited"></app-cpb>
 
@@ -62,8 +63,7 @@
       <!-- <app-cpb [cities]="favCity"></app-cpb> -->
     </div>
 
-    <div class="tab-pane fade" id="ceb-databinding" role="tabpanel"
-      aria-labelledby="ceb-databinding-tab">
+    <div class="tab-pane fade" id="ceb-databinding" role="tabpanel" aria-labelledby="ceb-databinding-tab">
       <h2>Child to Parent Comp Communication using Custom Event Binding</h2>
       <!-- Step 3 of CEB: Let's attach event handler for the emitted event -- $event to receive data-->
       <app-ceb (accountLoaded)="handleAccountLoaded($event)"></app-ceb>
@@ -98,7 +98,8 @@
       <div class="alert alert-success" *ngIf="isAuth; else NotAuthBlock">
         Thanks for loggin in. You can access premium features of this app
       </div>
-      <ng-template #NotAuthBlock> <!-- #NotAuthBlock is a template reference -->
+      <ng-template #NotAuthBlock>
+        <!-- #NotAuthBlock is a template reference -->
         <div class="alert alert-danger">
           You are not authenthicated. Login now...
         </div>
@@ -121,9 +122,9 @@
       <hr>
       <ng-container *ngTemplateOutlet="italian; context: myContext"></ng-container>
       <hr>
-      
+
       <!-- random in the following will refer to $implicit in myContext -->
-      <ng-template #eng1 let-random><span>Hello {{random}}!</span></ng-template> 
+      <ng-template #eng1 let-random><span>Hello {{random}}!</span></ng-template>
       <ng-template #eng2 let-myAge="age"><span>You are {{myAge}}!</span></ng-template>
       <ng-template #italian let-personName="name"><span>Hola {{personName}}!</span></ng-template>
 
@@ -134,6 +135,32 @@
       <div appColorizer="red">
         <p>Test</p>
       </div>
+    </div>
+
+    <div class="tab-pane fade" id="pipes-tab" role="tabpanel" aria-labelledby="pipes-tab">
+      <h2>Pipes</h2>
+      <p>To transform information from one format to another</p>
+      <h3>Demo of Pipes</h3>
+      <h4>Uppercase and lowercase Pipe Demo</h4>
+      <p>{{randomText}}</p>
+      <p>{{randomText | uppercase }}</p>
+      <p>{{randomText | lowercase }}</p>
+
+      <hr>
+      <h4>Date Pipe Demo</h4>
+      <p>{{today}}</p>
+      <p>{{today | date }}</p>
+      <p>{{today | date: 'dd-MMM-yyyy' }}</p> <!-- Parameterised Pipe-->
+      <p>{{today | date: 'dd/MMM/yyyy hh:mm:ss a' }}</p> <!-- Parameterised Pipe-->
+
+      <hr>
+      <h4>Custom Pipes</h4>
+      <p>Without Custom Pipe: {{dummyText}}</p>
+      <p>With Ellipis Pipe: {{dummyText | ellipsis}}</p>
+      <p>With Ellipis Pipe: {{dummyText | ellipsis: 20}}</p>
+      <p>With Ellipis Pipe: {{dummyText | ellipsis: 10}}</p>
+      <p>With Ellipis Pipe: {{dummyText | ellipsis: 60}}</p>
+
     </div>
 
   </div>

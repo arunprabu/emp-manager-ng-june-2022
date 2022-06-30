@@ -7,9 +7,9 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 // The comp is taken for testing 
 import { AppComponent } from './app.component'; // GIVEN
-import { FooterComponent } from './shared/footer/footer.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { MenuComponent } from './shared/menu/menu.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { MenuComponent } from './shared/components/menu/menu.component';
 
 // TEST PATTERN: GIVEN, WHEN, THEN (ARRANGE, ACT, ASSERT- AAA)
 // group of related test spec - test suite 

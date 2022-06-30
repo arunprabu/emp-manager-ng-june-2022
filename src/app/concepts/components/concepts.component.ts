@@ -39,6 +39,11 @@ export class ConceptsComponent implements OnInit, AfterViewInit {
 
   @ViewChild(CebComponent, { static: false}) cebData!: CebComponent;
 
+  // Pipes related
+  randomText = 'Lorem ipsum dolor sit amet';
+  dummyText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt';
+  today: Date = new Date();
+
   constructor(private cd: ChangeDetectorRef ) { 
 
   }
