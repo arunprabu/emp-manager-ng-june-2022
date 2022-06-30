@@ -75,5 +75,7 @@ TODO
   'Go Back' button should work in this url http://localhost:4200/employees/add
   
 ---
+TODO: Testing Colorizer Directive
 
+---
 

@@ -36,6 +36,7 @@ describe('EmployeesComponent', () => {
           useValue: {
             // mocking service data
             getEmployees: () => of(mockEmployeeList),
+            // mocking the service's method getEmployees to return mockEmployeeList data 
           }
         }
       ]

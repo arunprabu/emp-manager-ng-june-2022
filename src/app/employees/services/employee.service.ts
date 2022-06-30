@@ -34,10 +34,10 @@ export class EmployeeService {
     // REST API Client tool? HttpClient
     return this.http.get('https://jsonplaceholder.typicode.com/users')
       .pipe( map((res: any) => { // get the res from the rest api 
+        // sorting, filter, remove, add, modify, tilt, convert, any transformation
         console.log(res);
         return res; // send the res to the comp ts 
       }));
-
   }
 
   // fetch employee details

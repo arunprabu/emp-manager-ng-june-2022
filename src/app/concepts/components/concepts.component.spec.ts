@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ColorizerDirective } from '../directives/colorizer.directive';
 
 import { ConceptsComponent } from './concepts.component';
 
@@ -8,7 +9,7 @@ xdescribe('ConceptsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ConceptsComponent ]
+      declarations: [ ConceptsComponent, ColorizerDirective]
     })
       .compileComponents();
   });
@@ -22,4 +23,13 @@ xdescribe('ConceptsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // it('should have red <p>', () => {
+  //   const p: HTMLElement = fixture.nativeElement.querySelectorAll('p')[0];
+  //   const bgColor = p.style.backgroundColor;
+  //   expect(bgColor).toBe('red');
+  // });
+
+
+  
 });

@@ -439,22 +439,22 @@ Agenda
 ----
 Wednesday
 --
-ADD Employee
-LIST Employees 
-  testing service (continue Tomorrow)
-FETCH Employee Details 
-UPDATE Employee Details [TODO - REVIEW IT TOMORROW]
-DELETE Employee [TODO]
+ADD Employee [DONE]
+LIST Employees [DONE]
+  testing service [DONE]
+FETCH Employee Details [DONE]
+UPDATE Employee Details [DONE]
+DELETE Employee [DONE]
 
 
 Thursday
 ---
-RxJS/Observables 
-Testing Directives (10 mins)
+RxJS/Observables [DONE]
+Testing Directives (10 mins) [TODO]
 Testing async logic in component with tick and fakeasync (30 mins)
 Pipes 
-Testing Pipes 
 
+Testing Pipes 
 Modules 
 Any to Any Comp Commn 
 
@@ -466,7 +466,7 @@ Friday
     Interceptor 
 
 
-  Nic to have topics 
+  Nice to have topics 
   --
     ng animations
     material ui 
