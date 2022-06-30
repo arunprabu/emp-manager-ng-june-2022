@@ -8,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  city = '';
+  personName = '';
+  
   constructor(){}
 
-  ngOnInit(): void {   
+  ngOnInit(): void {
+    this.city = 'London';
+
+    setTimeout( () => {
+      this.personName = 'John';
+    }, 2000); // 1 sec delay
   }
 
 }
