@@ -64,3 +64,16 @@ Unit Testing Todos
   // TODO: testing whether para element (with msg class ) has css class 'redText' 
 
 ----
+
+TODO
+--
+  UPDATE Employee 
+  DELETE Employee 
+  After deleting redirect the user to employees page.
+    search: redirect to another url in angular on button click 
+
+  'Go Back' button should work in this url http://localhost:4200/employees/add
+  
+---
+
+

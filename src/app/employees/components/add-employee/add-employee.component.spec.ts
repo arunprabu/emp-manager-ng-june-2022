@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
@@ -12,7 +13,8 @@ describe('AddEmployeeComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ AddEmployeeComponent ],
       imports: [
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule
       ]
     })
       .compileComponents();

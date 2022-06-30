@@ -2,6 +2,7 @@
 
 
 // TestBed - Configures and initializes environment for unit testing
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing'; 
 import { RouterTestingModule } from '@angular/router/testing';
 // The comp is taken for testing 
@@ -18,7 +19,8 @@ describe('AppComponent', () => {
     // the following one is similar to app module 
     await TestBed.configureTestingModule({ // Test Bed is configured 
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientModule
       ],
       declarations: [
         AppComponent, // App comp is taken for testing

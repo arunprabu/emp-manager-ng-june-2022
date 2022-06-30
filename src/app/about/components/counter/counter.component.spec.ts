@@ -56,7 +56,7 @@ describe('CounterComponent', () => {
   // TODO: should stop at 10 and show Maximum Reached upon increment 
 
   // find an element and check whether it has css style (inline style)
-  it('should have red bg in h2 element', () => {
+  it('should have red bg in h2 element [CSS style]', () => {
     const counterCompHTML = fixture.nativeElement as HTMLElement;
     const bgColor =  counterCompHTML.querySelector('h2')?.style.backgroundColor;
     // expect(bgColor).toBe('red'); // Not recommended if you use #ff0000 or rgb(255, 0, 0)

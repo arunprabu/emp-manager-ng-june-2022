@@ -18,6 +18,7 @@ import { CalcComponent } from './about/components/calc/calc.component';
 import { CounterComponent } from './about/components/counter/counter.component';
 import { AddEmployeeComponent } from './employees/components/add-employee/add-employee.component';
 import { EmployeeDetailsComponent } from './employees/components/employee-details/employee-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // Main Switching Box
 @NgModule({ // Decorator
@@ -42,6 +43,7 @@ import { EmployeeDetailsComponent } from './employees/components/employee-detail
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

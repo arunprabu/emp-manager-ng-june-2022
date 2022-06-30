@@ -432,3 +432,54 @@ Service in Angular
 
 
 
+
+
+
+Agenda
+----
+Wednesday
+--
+ADD Employee
+LIST Employees 
+  testing service (continue Tomorrow)
+FETCH Employee Details 
+UPDATE Employee Details [TODO - REVIEW IT TOMORROW]
+DELETE Employee [TODO]
+
+
+Thursday
+---
+RxJS/Observables 
+Testing Directives (10 mins)
+Testing async logic in component with tick and fakeasync (30 mins)
+Pipes 
+Testing Pipes 
+
+Modules 
+Any to Any Comp Commn 
+
+
+Friday
+---
+  Authentication (3 hours) 
+    Guards
+    Interceptor 
+
+
+  Nic to have topics 
+  --
+    ng animations
+    material ui 
+    i18n 
+    Dynamic components 
+
+    build and deploy 
+    many ng commands 
+
+Monday
+---
+  NgRx (3 hours)
+  Angular Library  (3 hours)
+  Demo (3 hours)
+
+====

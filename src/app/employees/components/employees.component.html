@@ -11,13 +11,15 @@
   </div>
 
   <div class="row">
-    <div class="card col-sm-3">
+    
+    <div class="card col-sm-3" *ngFor="let employee of employeeList">
       <div class="card-body">
-        <h5 class="card-title">John</h5>
-        <p class="card-text">1231312</p>
-        <a routerLink="/employees/1" class="card-link">View Details</a>
+        <h5 class="card-title">{{employee.name}}</h5>
+        <p class="card-text">{{employee.phone}}</p>
+        <a routerLink="/employees/{{employee.id}}" class="card-link">View Details</a>
       </div>
     </div>
+
   </div>
 
 </div>

@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 
 import { EmployeeDetailsComponent } from './employee-details.component';
 
@@ -8,9 +10,13 @@ describe('EmployeeDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EmployeeDetailsComponent ]
+      declarations: [ EmployeeDetailsComponent ],
+      imports: [
+        HttpClientModule, 
+        RouterModule.forRoot([]) // this is needed because we have used ActivatedRoute
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

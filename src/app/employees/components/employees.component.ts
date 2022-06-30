@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../services/employee.service';
 
 @Component({
   selector: 'app-employees',
@@ -8,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeesComponent implements OnInit {
 
-  constructor() { }
+  employeeList: any[] = [];
 
-  ngOnInit(): void {
+  constructor(private employeeService: EmployeeService) { // Dep Inj
+    console.log('Inside constructor');
+  }
+
+  ngOnInit(): void { // lifecycle hook
+    // whenever the comp comes into view this will be called
+    // ideal place for us to send ajax req 
+    console.log('Inside ngOnInit');
+
+    this.employeeService.getEmployees()
+      .subscribe( (res: any) => {
+        this.employeeList = res;
+      });
   }
 
 }
