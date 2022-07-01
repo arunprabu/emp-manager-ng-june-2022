@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,10 +16,11 @@ import { CebComponent } from './concepts/components/ceb/ceb.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 import { CalcComponent } from './about/components/calc/calc.component';
 import { CounterComponent } from './about/components/counter/counter.component';
-import { HttpClientModule } from '@angular/common/http';
 import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
 import { EmployeesModule } from './employees/employees.module';
 import { ProductsModule } from './products/products.module';
+import { LoginComponent } from './auth/components/login/login.component';
+import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 
 // Main Switching Box
 @NgModule({ // Decorator
@@ -35,7 +37,8 @@ import { ProductsModule } from './products/products.module';
     ColorizerDirective,
     CalcComponent,
     CounterComponent,
-    EllipsisPipe
+    EllipsisPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,9 @@ import { ProductsModule } from './products/products.module';
     ProductsModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
+  ],
   // AppModule should in turn be bootstrapped with a component  -- AppComponent
   bootstrap: [AppComponent]
 })

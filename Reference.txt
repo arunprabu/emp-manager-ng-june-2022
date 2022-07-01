@@ -8,25 +8,25 @@ Thinking in Angular
 
 Building Blocks
 ---
-  Components 
+  Components [DONE]
     HTML, CSS, TS
   Directives [DONE]
-  Services  [Wednesday]
-  Interfaces / Classes / Models  [Wednesday]
-  Pipes
-  Guards
-  Modules 
-  Interceptor
+  Services  [DONE]
+  Interfaces / Classes / Models  [DONE]
+  Pipes [DONE]
+  Guards [DONE]
+  Modules [DONE]
+  Interceptor [DONE]
 
 ----
 Concepts 
 --
   Data Binding [DONE]
   Routing (~1.5 Hours) [DONE]
-  Cross Component Communication [Partially Covered]
-  RxJS / Observables  [Wednesday]
-  Lifecycle Hooks [Partially Covered]  [Wednesday]
-  Unit Testing [Wednesday]
+  Cross Component Communication [DONE]
+  RxJS / Observables  [DONE]
+  Lifecycle Hooks [DONE]
+  Unit Testing [DONE]
 
 
 
@@ -429,47 +429,9 @@ Service in Angular
   * building block in angular 
   ---
 
-
-
-
-
-
-
-Agenda
-----
-Wednesday
---
-ADD Employee [DONE]
-LIST Employees [DONE]
-  testing service [DONE]
-FETCH Employee Details [DONE]
-UPDATE Employee Details [DONE]
-DELETE Employee [DONE]
-
-
-Thursday
----
-RxJS/Observables [DONE]
-Testing Directives (10 mins) [TODO]
-Testing async logic in component with tick and fakeasync (30 mins) [DONE]
-Pipes [DONE]
-Testing Pipes  [DONE]
-Modules [DONE]
-
-Friday
----
-  Testing Services - with Spy  [ DONE]
-  Any to Any Comp Commn (40 mins)
-  Authentication (2.30 hours) 
-    Guards
-    Interceptor 
-
-  NgRx (3 hours)
-
-  
-
 Monday
 ---
+  NgRx (3 hours)
   Angular Library  (3 hours)
   Nice to have topics 
   --
