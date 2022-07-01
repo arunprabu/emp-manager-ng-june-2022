@@ -18,6 +18,7 @@ import { CounterComponent } from './about/components/counter/counter.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
 import { EmployeesModule } from './employees/employees.module';
+import { ProductsModule } from './products/products.module';
 
 // Main Switching Box
 @NgModule({ // Decorator
@@ -41,6 +42,7 @@ import { EmployeesModule } from './employees/employees.module';
     FormsModule,
     HttpClientModule,
     EmployeesModule,
+    ProductsModule,
     AppRoutingModule,
   ],
   providers: [],

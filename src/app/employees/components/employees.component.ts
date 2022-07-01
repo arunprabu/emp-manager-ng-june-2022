@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IEmployee } from '../models/iemployee';
 import { EmployeeService } from '../services/employee.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { EmployeeService } from '../services/employee.service';
 })
 export class EmployeesComponent implements OnInit {
 
-  employeeList: any[] = [];
+  employeeList: IEmployee[] = [];
 
   constructor(private employeeService: EmployeeService) { // Dep Inj
     console.log('Inside constructor');
@@ -21,7 +22,7 @@ export class EmployeesComponent implements OnInit {
     console.log('Inside ngOnInit');
 
     this.employeeService.getEmployees()
-      .subscribe( (res: any) => {
+      .subscribe( (res: IEmployee[]) => {
         console.log(res);
         this.employeeList = res;
       });

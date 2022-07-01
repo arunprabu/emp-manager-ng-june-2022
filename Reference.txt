@@ -456,9 +456,9 @@ Pipes [DONE]
 Testing Pipes  [DONE]
 Modules [DONE]
 
-
 Friday
 ---
+  Testing Services - with Spy  [ DONE]
   Any to Any Comp Commn (40 mins)
   Authentication (2.30 hours) 
     Guards
@@ -491,10 +491,14 @@ Feature Modules and Feature Routing Modules
   Step 1: 
     --
     create feature module 
-      ng g m employees/employees --flat -m=app 
+      ng g m products/employees --flat -m=app 
 
   Step 2: 
     create feature routing module 
       ng g m employees/employees-routing --flat -m=employees 
 
 ---
+ng g c products/components/products-list -s 
+ng g c products/components/products-details -s -t
+
+----
