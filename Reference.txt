@@ -459,12 +459,18 @@ Modules [DONE]
 
 Friday
 ---
-  Any to Any Comp Commn 
-  Authentication (3 hours) 
+  Any to Any Comp Commn (40 mins)
+  Authentication (2.30 hours) 
     Guards
     Interceptor 
 
+  NgRx (3 hours)
 
+  
+
+Monday
+---
+  Angular Library  (3 hours)
   Nice to have topics 
   --
     ng animations
@@ -474,11 +480,7 @@ Friday
 
     build and deploy 
     many ng commands 
-
-Monday
----
-  NgRx (3 hours)
-  Angular Library  (3 hours)
+  
   Demo (3 hours)
 
 ====
