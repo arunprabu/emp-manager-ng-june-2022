@@ -239,8 +239,11 @@ Cross Component Communication
       2.2 Using @ViewChild() [TODO] 
 
   3. Any to Any Component Communication
-      Using RxJS/Observable 
-      Prereq: Services, RxJS/Observables, Subscription, LifeCycle Hooks 
+      3.1) Using RxJS/Observable 
+          Prereq: Services, RxJS/Observables, Subscription, LifeCycle Hooks 
+      
+      3.2) Using Redux or NgRx 
+          Prereq: Flux Pattern 
 
 
 
@@ -455,13 +458,11 @@ Build & Deployment
 
   ng build 
 
+  Try Lazy Loading 
+
 
 Monday
 ---
-  build and deploy 
-  Lazy Loading 
-  
-  ----
   NgRx (3 hours)
   Angular Library  (3 hours)
   Nice to have topics 
@@ -470,8 +471,6 @@ Monday
     material ui 
     i18n 
     Dynamic components 
-
-    
     many ng commands 
   
   Demo (3 hours)
