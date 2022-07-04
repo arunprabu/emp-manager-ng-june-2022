@@ -11,7 +11,11 @@ const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'concepts', component: ConceptsComponent },
   { path: 'about', component: AboutComponent, canActivate: [AuthGuard]},
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'products',
+    loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
+  }
 ];
 
 @NgModule({

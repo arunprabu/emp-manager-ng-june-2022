@@ -447,9 +447,21 @@ ng g c products/components/products-details -s -t
 ----
 
 
+Build & Deployment
+---
+  Build Checklist
+    1) remove all console logs 
+    2) check for errors in console 
+
+  ng build 
+
 
 Monday
 ---
+  build and deploy 
+  Lazy Loading 
+  
+  ----
   NgRx (3 hours)
   Angular Library  (3 hours)
   Nice to have topics 
@@ -459,7 +471,7 @@ Monday
     i18n 
     Dynamic components 
 
-    build and deploy 
+    
     many ng commands 
   
   Demo (3 hours)

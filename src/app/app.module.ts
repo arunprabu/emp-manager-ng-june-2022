@@ -45,7 +45,6 @@ import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
     FormsModule,
     HttpClientModule,
     EmployeesModule,
-    ProductsModule,
     AppRoutingModule,
   ],
   providers: [

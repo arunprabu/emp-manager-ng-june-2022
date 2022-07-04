@@ -6,8 +6,8 @@ import { ProductsDetailsComponent } from './components/products-details/products
 
 // config child/nested route
 const productsRoutes: Routes = [
-  { path: 'products', component: ProductsListComponent },
-  { path: 'products/:id', component: ProductsDetailsComponent }
+  { path: '', component: ProductsListComponent },
+  { path: ':id', component: ProductsDetailsComponent }
 ];
 
 @NgModule({
