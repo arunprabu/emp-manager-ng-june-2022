@@ -34,12 +34,14 @@ describe('EmployeeService', () => {
       {
         id: 1,
         name: 'Leanne Graham',
-        phone: '1-770-736-8031 x56442'
+        phone: '1-770-736-8031 x56442',
+        email: 'a@b.com'
       },
       {
         id: 2,
         name: 'Ervin Howell',
-        phone: '010-692-6593 x09125'
+        phone: '010-692-6593 x09125',
+        email: 'a@b.com'
       }
     ];
   

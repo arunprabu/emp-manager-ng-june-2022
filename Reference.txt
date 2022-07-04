@@ -429,6 +429,25 @@ Service in Angular
   * building block in angular 
   ---
 
+Feature Modules and Feature Routing Modules
+--
+  Step 1: 
+    --
+    create feature module 
+      ng g m products/employees --flat -m=app 
+
+  Step 2: 
+    create feature routing module 
+      ng g m employees/employees-routing --flat -m=employees 
+
+---
+ng g c products/components/products-list -s 
+ng g c products/components/products-details -s -t
+
+----
+
+
+
 Monday
 ---
   NgRx (3 hours)
@@ -446,21 +465,3 @@ Monday
   Demo (3 hours)
 
 ====
-
-
-Feature Modules and Feature Routing Modules
---
-  Step 1: 
-    --
-    create feature module 
-      ng g m products/employees --flat -m=app 
-
-  Step 2: 
-    create feature routing module 
-      ng g m employees/employees-routing --flat -m=employees 
-
----
-ng g c products/components/products-list -s 
-ng g c products/components/products-details -s -t
-
-----
