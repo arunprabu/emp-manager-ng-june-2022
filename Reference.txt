@@ -463,8 +463,7 @@ Build & Deployment
 
 Monday
 ---
-  NgRx (3 hours)
-  Angular Library  (3 hours)
+  Angular Library 
   Nice to have topics 
   --
     ng animations

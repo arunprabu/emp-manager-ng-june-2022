@@ -54,17 +54,6 @@ TODO: work on mouseover change bg color to light green
 TODO: work on mouseout change bg color back to red
 
 
-Unit Testing Todos
----
-  in counter.comp.spec.ts 
-  // TODO: Decrement value in html template thru click on decrement btn
-
-  // TODO: should stop at 0 and show Minimum Reached upon decrement 
-  // TODO: should stop at 10 and show Maximum Reached upon increment 
-  // TODO: testing whether para element (with msg class ) has css class 'redText' 
-
-----
-
 TODO
 --
   UPDATE Employee 
@@ -75,14 +64,25 @@ TODO
   'Go Back' button should work in this url http://localhost:4200/employees/add
   
 ---
-TODO: Testing Colorizer Directive
 
----
 
 TODO: Post-login only Logout menu should be visible.
 TODO: Work on logout. Post logout 'Login' and 'Signup' should be visible 
-TODO: Explore Auto-Login, Auto-Logout
+TODO: [Explore] Auto-Login, Auto-Logout
 
 
+-
 
+Unit Testing Todos
+---
+  in counter.comp.spec.ts 
+  // TODO: Decrement value in html template thru click on decrement btn
+  // TODO: should stop at 0 and show Minimum Reached upon decrement 
+  // TODO: should stop at 10 and show Maximum Reached upon increment 
+  // TODO: testing whether para element (with msg class ) has css class 'redText' 
 
+----
+
+TODO: Testing Colorizer Directive
+
+---
