@@ -1,13 +1,3 @@
-
-TODO: Include bootstrap css and js properly in angular app 
-
-TODO: Add the following 3 menu items 
-  
-  Employees
-  Products 
-  About 
-
-
 TODO: Integrate bootstrap properly 
   [Recommended]  Tightly integrate with angular.json 
 ---
